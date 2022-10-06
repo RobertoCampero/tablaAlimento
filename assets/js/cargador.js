@@ -13,10 +13,10 @@ function CargarProducto(){
     var cantidadS=document.getElementById("a3");
     var precioS=document.getElementById("a4");
     var descripcion2S=document.getElementById("a5");
-    suma=cantidadS*precioS;
 
     var Pedido1=new PedidoModelo(productoS,unidadS,cantidadS,precioS,descripcion2S);
     console.log(Pedido1);
+
     var table1=document.getElementById("tablaSolicitud");
     var row = table1.insertRow(-1);
     var cell1=row.insertCell(0);
@@ -32,6 +32,6 @@ function CargarProducto(){
     cell4.innerHTML=Pedido1.unidad.value;
     cell5.innerHTML=Pedido1.cantidad.value;
     cell6.innerHTML=Pedido1.precio.value;
-    cell7.innerHTML=suma.value;
+    cell7.innerHTML=suma;
     index++;
 }
