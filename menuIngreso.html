@@ -43,13 +43,13 @@
                         </div>
                     </nav>
                     <nav class="navbar navbar-light navbar-expand-md fixed-top" style="padding-top: 147px;padding-right: 72px;">
-                        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="background: var(--bs-green);"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse" id="navcol-2">
+                        <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="background: var(--bs-green);margin-top: -59px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navcol-2" style="margin-top: -8px;">
                                 <ul class="navbar-nav">
-                                    <li class="nav-item"><a class="nav-link" href="menuDashboard.html" style="background: var(--bs-green);">DASHBOARD</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);">DASHBOARD</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);">INGRESO</a></li>
                                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="" style="background: var(--bs-green);">EGRESO</a>
-                                        <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuEgresoCrearNO1.html">CREAR SOLICITUD</a><a class="dropdown-item" href="menuEgresoVer.html">VER SOLICITUDES</a></div>
+                                        <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuEgresoCrear.html">CREAR SOLICITUD</a><a class="dropdown-item" href="menuEgresoVer">VER SOLICITUDES</a></div>
                                     </li>
                                     <li class="nav-item"></li>
                                     <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);">ANALISIS</a></li>
@@ -61,37 +61,78 @@
             </div>
         </div>
     </div>
-    <div style="padding-top: 230px;">
-        <div class="container">
+    <div id="Cabezera" style="margin-top: 210px;">
+        <div class="container" style="border-style: solid;">
+            <div class="row">
+                <div class="col text-center"><label class="col-form-label" style="font-size: 20px;"><strong>CHANCHITA#1234</strong><br></label></div>
+            </div>
             <div class="row">
                 <div class="col">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead class="text-center" style="border-color: var(--bs-body-color);">
-                                <tr>
-                                    <th style="border-width: 3px;">FECHA</th>
-                                    <th style="border-width: 3px;border-color: var(--bs-table-active-color);">CODIGO DE PEDIDO</th>
-                                    <th style="border-width: 3px;border-color: var(--bs-table-active-color);">SOLICITANTE</th>
-                                    <th style="border-width: 3px;border-color: var(--bs-table-active-color);">CATEGORIA</th>
-                                    <th style="border-width: 3px;">SUBCATEGORIA</th>
-                                    <th style="border-width: 3px;">DESCRIPCION</th>
-                                    <th style="border-width: 3px;">ESTADO</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-center" style="border-width: 3px;border-color: var(--bs-table-active-color);">
-                                <tr>
-                                    <td>23/09/2022</td>
-                                    <td>202100094</td>
-                                    <td>Juan Carlos Guerrero Guevara</td>
-                                    <td>INSUMOS</td>
-                                    <td>SERVICIOS LUZ Y AGUA</td>
-                                    <td>XXXX</td>
-                                    <td>PENDIENTE</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">PESO:</label><input class="form-control" type="text" id="codigoPedido"></div>
+                        </div>
+                    </form>
                 </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">TAMAÑO</label><input class="form-control" type="text" id="codigoPedido-1"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">&nbsp;LOTE:</label><input class="form-control" type="text" id="codigoPedido-2"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">FECHA NACIMIENTO:</label><input class="form-control" type="text" id="codigoPedido-3"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">GENERO:</label><input class="form-control" type="text" id="codigoPedido-4"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">RAZA:</label><input class="form-control" type="text" id="codigoPedido-5"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">PRECIO DE COMPRA:</label><input class="form-control" type="text" id="codigoPedido-6"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 55px;">
+                <div class="col text-center" style="border-top-style: solid;"><label class="col-form-label" style="font-size: 20px;"><strong>DETALLES</strong></label></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">DESCRIPCION:</label><textarea class="form-control" id="descripcionProducto"></textarea></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 23px;">
+                <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido" type="button" style="background: var(--bs-green);">AÑADIR</button></div>
             </div>
         </div>
     </div>
