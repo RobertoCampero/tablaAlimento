@@ -11,7 +11,7 @@ function CargarProducto(){
     var productoS=document.getElementById("categoriaDetalles").value;
     var unidadS=document.getElementById("unidadDetalles").value;
     var cantidadS=document.getElementById("cantidadDetalles").value;
-    var precioS=document.getElementById("cantidadDetalles").value;
+    var precioS=document.getElementById("precioUnitario").value;
     var descripcion2S=document.getElementById("descripcionDetalles").value;
     var subtotalS=cantidadS*precioS;
 
