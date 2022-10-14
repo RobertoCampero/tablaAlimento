@@ -15,37 +15,78 @@
 </head>
 
 <body style="background: var(--bs-teal);">
-    <div style="padding-top: 230px;">
-        <div class="container">
+    <div id="Cabezera" style="margin-top: 210px;">
+        <div class="container" style="border-style: solid;">
+            <div class="row">
+                <div class="col text-center"><label class="col-form-label" style="font-size: 20px;"><strong>CHANCHITA#1234</strong><br></label></div>
+            </div>
             <div class="row">
                 <div class="col">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead class="text-center" style="border-color: var(--bs-body-color);">
-                                <tr>
-                                    <th style="border-width: 3px;">FECHA</th>
-                                    <th style="border-width: 3px;border-color: var(--bs-table-active-color);">CODIGO DE PEDIDO</th>
-                                    <th style="border-width: 3px;border-color: var(--bs-table-active-color);">SOLICITANTE</th>
-                                    <th style="border-width: 3px;border-color: var(--bs-table-active-color);">CATEGORIA</th>
-                                    <th style="border-width: 3px;">SUBCATEGORIA</th>
-                                    <th style="border-width: 3px;">DESCRIPCION</th>
-                                    <th style="border-width: 3px;">ESTADO</th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-center" style="border-width: 3px;border-color: var(--bs-table-active-color);">
-                                <tr>
-                                    <td>23/09/2022</td>
-                                    <td>202100094</td>
-                                    <td>Juan Carlos Guerrero Guevara</td>
-                                    <td>INSUMOS</td>
-                                    <td>SERVICIOS LUZ Y AGUA</td>
-                                    <td>XXXX</td>
-                                    <td>PENDIENTE</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">PESO:</label><input class="form-control" type="text" id="codigoPedido"></div>
+                        </div>
+                    </form>
                 </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">TAMAÑO</label><input class="form-control" type="text" id="codigoPedido-1"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">&nbsp;LOTE:</label><input class="form-control" type="text" id="codigoPedido-2"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">FECHA NACIMIENTO:</label><input class="form-control" type="text" id="codigoPedido-3"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">GENERO:</label><input class="form-control" type="text" id="codigoPedido-4"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">RAZA:</label><input class="form-control" type="text" id="codigoPedido-5"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">PRECIO DE COMPRA:</label><input class="form-control" type="text" id="codigoPedido-6"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row" style="padding-top: 55px;">
+                <div class="col text-center" style="border-top-style: solid;"><label class="col-form-label" style="font-size: 20px;"><strong>DETALLES</strong></label></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="row">
+                            <div class="col"><label class="form-label">DESCRIPCION:</label><textarea class="form-control" id="descripcionProducto"></textarea></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 23px;">
+                <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedido" type="button" style="background: var(--bs-green);">AÑADIR</button></div>
             </div>
         </div>
     </div>

@@ -1,20 +1,21 @@
 var index=1;
-var suma=0;
-function PedidoModelo(producto,unidad,cantidad,precio,descripcion2){
+function PedidoModelo(producto,unidad,cantidad,precio,descripcion2,subtotal){
     this.producto=producto;
     this.unidad=unidad;
     this.cantidad=cantidad;
     this.precio=precio;
     this.descripcion2=descripcion2;
+    this.subtotal=subtotal;
 }
 function CargarProducto(){
-    var productoS=document.getElementById("a1");
-    var unidadS=document.getElementById("a2");
-    var cantidadS=document.getElementById("a3");
-    var precioS=document.getElementById("a4");
-    var descripcion2S=document.getElementById("a5");
+    var productoS=document.getElementById("categoriaDetalles").value;
+    var unidadS=document.getElementById("unidadDetalles").value;
+    var cantidadS=document.getElementById("cantidadDetalles").value;
+    var precioS=document.getElementById("cantidadDetalles").value;
+    var descripcion2S=document.getElementById("descripcionDetalles").value;
+    var subtotalS=cantidadS*precioS;
 
-    var Pedido1=new PedidoModelo(productoS,unidadS,cantidadS,precioS,descripcion2S);
+    var Pedido1=new PedidoModelo(productoS,unidadS,cantidadS,precioS,descripcion2S,subtotalS);
     console.log(Pedido1);
 
     var table1=document.getElementById("tablaSolicitud");
@@ -27,11 +28,11 @@ function CargarProducto(){
     var cell6 =row.insertCell(5);
     var cell7 =row.insertCell(6);
     cell1.innerHTML=index;
-    cell2.innerHTML=Pedido1.producto.value;
-    cell3.innerHTML=Pedido1.descripcion2.value;
-    cell4.innerHTML=Pedido1.unidad.value;
-    cell5.innerHTML=Pedido1.cantidad.value;
-    cell6.innerHTML=Pedido1.precio.value;
-    cell7.innerHTML=suma;
+    cell2.innerHTML=Pedido1.producto;
+    cell3.innerHTML=Pedido1.descripcion2;
+    cell4.innerHTML=Pedido1.unidad;
+    cell5.innerHTML=Pedido1.cantidad;
+    cell6.innerHTML=Pedido1.precio;
+    cell7.innerHTML=Pedido1.subtotal;
     index++;
 }
