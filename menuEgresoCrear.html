@@ -14,43 +14,27 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body style="background: var(--bs-teal);">
+<body style="background: #1c3a31;">
     <div class="text-center" id="colapsos" style="margin-top: 277px;">
         <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-1" href="#collapse-1" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);">SOLICITUD</a>
             <div class="collapse show" id="collapse-1">
                 <div id="Cabezera">
-                    <div class="container" style="border-style: solid;">
+                    <div class="container" style="border-style: solid;border-color: var(--bs-white);">
                         <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;"><strong>SOLICITUD DEL PEDIDO</strong><br></label></div>
+                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-light);"><strong>SOLICITUD DEL PEDIDO</strong><br></label></div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">FECHA:</label><input class="form-control" id="fechaPedido" type="date"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">FECHA:</label><input class="form-control" id="fechaPedido" type="date"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">SOLICITANTE:</label><input class="form-control" type="text" id="solicitantePedido"></div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row" style="margin-top: 27px;">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label">CODIGO:</label><input class="form-control" type="text" id="codigoPedido"></div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label">VERIFICADO POR:</label><input class="form-control" type="text" id="verificadoPedido"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">SOLICITANTE:</label><input class="form-control" type="text" id="solicitantePedido"></div>
                                     </div>
                                 </form>
                             </div>
@@ -59,14 +43,14 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">DESCRIPCION:</label><textarea class="form-control" id="descripcionPedido"></textarea></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CODIGO:</label><input class="form-control" type="text" id="codigoPedido"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">APROBADO POR:</label><input class="form-control" type="text" id="aprobadoPedido"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">VERIFICADO POR:</label><input class="form-control" type="text" id="verificadoPedido"></div>
                                     </div>
                                 </form>
                             </div>
@@ -75,11 +59,50 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">CATEGORIA:</label><select class="form-select" id="categoriaPedido">
-                                                <option value="1">ALIMENTOS</option>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">DESCRIPCION:</label><textarea class="form-control" id="descripcionPedido"></textarea></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col">
+                                <form>
+                                    <div class="row">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">APROBADO POR:</label><input class="form-control" type="text" id="aprobadoPedido"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-top: 27px;">
+                            <div class="col">
+                                <form>
+                                    <div class="row">
+                                        <div class="col"><label class="col-form-label" style="color: var(--bs-light);">PARA:</label></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="informacionElegido"><label class="form-check-label" for="informacionElegido-1" style="color: var(--bs-light);">SU INFORMACION</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="accionElegido"><label class="form-check-label" for="accionElegido-1" style="color: var(--bs-light);">ACCION INMEDIATA</label></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="discusionElegido"><label class="form-check-label" for="discusionElegido-1" style="color: var(--bs-light);">DISCUSION</label></div>
+                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="aprobacionElegido"><label class="form-check-label" for="aprobacionElegido-1" style="color: var(--bs-light);">APROBACION</label></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-center" style="margin-top: 37px;border-top-style: solid;"><label class="col-form-label" style="font-size: 20px;color: var(--bs-light);"><strong>DETALLES DEL PEDIDO</strong></label></div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="row">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CATEGORIA:</label><select class="form-select" id="categoriaPedido">
+                                                <option value="1">ALIMENTACION</option>
                                                 <option value="2">MEDICAMENTOS</option>
                                                 <option value="3">MANTENIMIENTO</option>
                                                 <option value="4">REPRODUCTORES</option>
+                                                <option value="5">TRANSPORTE</option>
                                             </select></div>
                                     </div>
                                 </form>
@@ -87,29 +110,7 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="col-form-label">PARA:</label></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="informacionElegido"><label class="form-check-label" for="informacionElegido-1">SU INFORMACION</label></div>
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="accionElegido"><label class="form-check-label" for="accionElegido-1">ACCION INMEDIATA</label></div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="discusionElegido"><label class="form-check-label" for="discusionElegido-1">DISCUSION</label></div>
-                                            <div class="form-check"><input class="form-check-input" type="checkbox" id="aprobacionElegido"><label class="form-check-label" for="aprobacionElegido-1">APROBACION</label></div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col text-center" style="margin-top: 37px;border-top-style: solid;"><label class="col-form-label" style="font-size: 20px;"><strong>DETALLES DEL PEDIDO</strong></label></div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <form>
-                                    <div class="row">
-                                        <div class="col"><label class="form-label">PRODUCTO:</label><select class="form-select" id="categoriaDetalles">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">PRODUCTO:</label><select class="form-select" id="categoriaDetalles">
                                                 <option value="1">MAIZ</option>
                                                 <option value="1">SORGO</option>
                                                 <option value="1">SOYA</option>
@@ -124,7 +125,7 @@
                                                 <option value="2">AGUA OXIGENADA</option>
                                                 <option value="2">CICATRIZANTES</option>
                                                 <option value="3">INFRAESTRUCTURAS</option>
-                                                <option value="4">BERRACO</option>
+                                                <option value="4">VERRACO</option>
                                                 <option value="4">VIENTRE</option>
                                             </select></div>
                                     </div>
@@ -133,11 +134,11 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">UNIDAD:</label><select class="form-select" id="unidadDetalles">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">UNIDAD:</label><select class="form-select" id="unidadDetalles">
                                                 <option value="Kg.">Kg.</option>
                                                 <option value="QQ.">QQ.</option>
                                                 <option value="Tn.">Tn.</option>
-                                                <option value="Gramo">Gramo</option>
+                                                <option value="Gramos">Gramos</option>
                                             </select></div>
                                     </div>
                                 </form>
@@ -145,14 +146,14 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">CANTIDAD:</label><input class="form-control" type="text" id="cantidadDetalles"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CANTIDAD:</label><input class="form-control" type="number" id="cantidadDetalles" onkeypress="return event.charCode &gt;=48" min="0" value="0"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">PRECIO UNITARIO:</label><input class="form-control" type="text" id="precioUnitario"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">PRECIO UNITARIO:</label><input class="form-control" type="number" id="precioUnitario" onkeypress="return event.charCode &gt;=48" min="0" value="0"></div>
                                     </div>
                                 </form>
                             </div>
@@ -161,7 +162,7 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">DESCRIPCION:</label><textarea class="form-control" id="descripcionDetalles"></textarea></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">DESCRIPCION:</label><textarea class="form-control" id="descripcionDetalles"></textarea></div>
                                     </div>
                                 </form>
                             </div>
@@ -172,20 +173,21 @@
                     </div>
                 </div>
                 <div id="Tabla">
-                    <div class="container" style="border-style: solid;">
+                    <div class="container" style="border-style: solid;border-color: var(--bs-white);">
                         <div class="row">
                             <div class="col">
                                 <div class="table-responsive">
                                     <table class="table" id="tablaSolicitud">
                                         <thead class="text-center">
                                             <tr>
-                                                <th style="border-width: 3px;border-color: var(--bs-table-active-color);width: 6%;">ITEM</th>
-                                                <th style="border-width: 3px;border-color: var(--bs-table-active-color);">PRODUCTO</th>
-                                                <th style="border-width: 3px;border-color: var(--bs-table-active-color);">DESCRIPCION</th>
-                                                <th style="border-width: 3px;border-color: var(--bs-table-active-color);width: 10%;">UNIDAD</th>
-                                                <th style="border-width: 3px;border-color: var(--bs-table-active-color);width: 10%;">CANTIDAD</th>
-                                                <th style="border-width: 3px;border-color: var(--bs-table-active-color);width: 10%;">PRECIO UNITARIO</th>
-                                                <th style="border-width: 3px;border-color: var(--bs-table-active-color);width: 10%;">SUBTOTAL (Bs.-)</th>
+                                                <th style="width: 6%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">ITEM</th>
+                                                <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">CATEGORIA</th>
+                                                <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">PRODUCTO</th>
+                                                <th style="color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">DESCRIPCION</th>
+                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">UNIDAD</th>
+                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">CANTIDAD</th>
+                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">PRECIO UNITARIO</th>
+                                                <th style="width: 10%;color: var(--bs-light);border-width: 3px;border-color: var(--bs-white);">SUBTOTAL (Bs.-)</th>
                                             </tr>
                                         </thead>
                                         <tbody></tbody>
@@ -197,8 +199,8 @@
                             <div class="col" style="text-align: right;">
                                 <div></div>
                             </div>
-                            <div class="col" style="text-align: right;"><label class="col-form-label">TOTAL (BS.-)=</label></div>
-                            <div class="col" style="text-align: right;max-width: 30%;"><label class="col-form-label">0.00 Bs.-</label></div>
+                            <div class="col" style="text-align: right;"><label class="col-form-label" style="color: var(--bs-light);">TOTAL (BS.-)=</label></div>
+                            <div class="col" style="text-align: right;max-width: 30%;"><label class="col-form-label" id="resultadoEgreso" style="color: var(--bs-light);">0.00 Bs.-</label></div>
                         </div>
                         <div class="row">
                             <div class="col" style="text-align: center;"><button class="btn btn-primary" id="mandarSolicitud" type="button" style="background: var(--bs-green);" onclick="cargar()">SOLICITAR PEDIDO</button></div>
@@ -212,27 +214,27 @@
                 <div id="Cabezera-1">
                     <div class="container" style="border-style: solid;">
                         <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;"><strong>APROBACION</strong><br></label></div>
+                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>APROBACION</strong><br></label></div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">QUIEN APROBO:</label><input class="form-control" type="text" id="solicitantePedido-1"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">QUIEN APROBO:</label><input class="form-control" type="text" id="solicitantePedido-1"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">FECHA DE APROBACION:</label><input class="form-control" id="fechaPedido-1" type="date"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE APROBACION:</label><input class="form-control" id="fechaPedido-1" type="date"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">ESTADO DE APROBACION:</label><select class="form-select" id="categoriaPedido-1">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">ESTADO DE APROBACION:</label><select class="form-select" id="categoriaPedido-1">
                                                 <option value="1">APROBADO</option>
                                                 <option value="2">RECHAZADO</option>
                                                 <option value="3">MODIFICADO</option>
@@ -253,20 +255,20 @@
                 <div id="Cabezera-2">
                     <div class="container" style="border-style: solid;">
                         <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;"><strong>DESEMBOLSO</strong><br></label></div>
+                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>DESEMBOLSO</strong><br></label></div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">FECHA DE APROBACION:</label><input class="form-control" id="fechaPedido-2" type="date"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE APROBACION:</label><input class="form-control" id="fechaPedido-2" type="date"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">ENTREGA DE DESEMBOLSO:</label><input class="form-control" type="text" id="solicitantePedido-2"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">ENTREGA DE DESEMBOLSO:</label><input class="form-control" type="text" id="solicitantePedido-2"></div>
                                     </div>
                                 </form>
                             </div>
@@ -283,20 +285,20 @@
                 <div id="Cabezera-3">
                     <div class="container" style="border-style: solid;">
                         <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;"><strong>COMPRA</strong><br></label></div>
+                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>COMPRA</strong><br></label></div>
                         </div>
                         <div class="row">
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">FECHA DE COMPRA:</label><input class="form-control" id="fechaPedido-3" type="date"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE COMPRA:</label><input class="form-control" id="fechaPedido-3" type="date"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">QUIEN COMPRA:</label><input class="form-control" type="text" id="solicitantePedido-3"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">QUIEN COMPRA:</label><input class="form-control" type="text" id="solicitantePedido-3"></div>
                                     </div>
                                 </form>
                             </div>
@@ -313,7 +315,7 @@
                 <div id="Cabezera-4">
                     <div class="container" style="border-style: solid;">
                         <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;"><strong>APROBACION</strong><br></label></div>
+                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-white);"><strong>APROBACION</strong><br></label></div>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -322,7 +324,7 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label">FECHA DE APROBACION:</label><input class="form-control" id="fechaPedido-4" type="date"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE APROBACION:</label><input class="form-control" id="fechaPedido-4" type="date"></div>
                                     </div>
                                 </form>
                             </div>
@@ -343,12 +345,12 @@
             <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2" style="background: var(--bs-green);padding-top: 126px;margin-top: -59px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-2" style="margin-top: -8px;">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);">DASHBOARD</a></li>
-                        <li class="nav-item"><a class="nav-link" href="menuIngreso.html" style="background: var(--bs-green);">INGRESO</a></li>
-                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="" style="background: var(--bs-green);">EGRESO</a>
+                        <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);color: var(--bs-light);">DASHBOARD</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menuIngreso.html" style="background: var(--bs-green);color: var(--bs-light);">INGRESO</a></li>
+                        <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="" style="background: var(--bs-green);color: var(--bs-light);">EGRESO</a>
                             <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuEgresoCrear.html">CREAR SOLICITUD</a><a class="dropdown-item" href="menuEgresoVer.html">VER SOLICITUDES</a></div>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);">ANALISIS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" style="background: var(--bs-green);color: var(--bs-light);">ANALISIS</a></li>
                     </ul>
                 </div>
             </div>
@@ -371,7 +373,7 @@
                                     <div class="col offset-3">
                                         <ul class="navbar-nav flex-nowrap ms-auto">
                                             <li class="nav-item dropdown no-arrow">
-                                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">USUARIO</span><img class="border rounded-circle img-profile" src="assets/img/depositphotos_35209657-stock-photo-pig-on-white.jpg" width="100"></a>
+                                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small" style="color: var(--bs-light);">USUARIO</span><img class="border rounded-circle img-profile" src="assets/img/depositphotos_35209657-stock-photo-pig-on-white.jpg" width="100"></a>
                                                     <div class="dropdown-menu dropdown-menu-dark shadow dropdown-menu-end animated--grow-in" style="background: var(--bs-success);"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;PERFIL</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;AJUSTES</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;ACTIVIDADES</a>
                                                         <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;CERRAR SESION</a>
                                                     </div>
@@ -379,7 +381,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col text-center"><label class="col-form-label" id="fechaIngreso" style="font-size: 22px;">dd/mm/aa</label></div>
+                                    <div class="col text-center"><label class="col-form-label" id="fechaIngreso" style="font-size: 22px;color: var(--bs-light);">dd/mm/aa</label></div>
                                 </div>
                             </div>
                         </div>
@@ -392,6 +394,7 @@
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/cargador.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="assets/js/ingreso.js"></script>
 </body>
 
 </html>
