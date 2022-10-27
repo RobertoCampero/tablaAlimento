@@ -11,6 +11,7 @@ function PedidoModelo(categoria,producto,unidad,cantidad,precio,descripcion2,sub
 }
 function CargarProducto(){
     let eleccion=document.querySelector('#categoriaPedido');
+    console.log(eleccion.value);
     var categoriaS=eleccion.options[eleccion.selectedIndex].text;
     let eleccion2=document.getElementById("categoriaDetalles");
     var productoS=eleccion2.options[eleccion2.selectedIndex].text;

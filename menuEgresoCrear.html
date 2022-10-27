@@ -16,12 +16,12 @@
 
 <body style="background: #1c3a31;">
     <div class="text-center" id="colapsos" style="margin-top: 277px;">
-        <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);">SOLICITUD</a>
+        <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-1" href="#collapse-1" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">SOLICITUD</a>
             <div class="collapse" id="collapse-1">
                 <div id="Cabezera">
                     <div class="container" style="border-style: solid;border-color: var(--bs-white);">
                         <div class="row">
-                            <div class="col text-center"><label class="col-form-label" style="font-size: 20px;color: var(--bs-light);"><strong>SOLICITUD DEL PEDIDO</strong><br></label></div>
+                            <div class="col text-center"><label class="col-form-label" style="font-size: 19px;color: var(--bs-light);"><strong>SOLICITUD DEL PEDIDO</strong><br></label></div>
                         </div>
                         <div class="row">
                             <div class="col">
@@ -97,7 +97,7 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CATEGORIA:</label><select class="form-select" id="categoriaPedido">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-light);">CATEGORIA:</label><select class="form-select" id="categoriaPedido" onclick="cargarCategoria(this)">
                                                 <option value="1">ALIMENTACION</option>
                                                 <option value="2">MEDICAMENTOS</option>
                                                 <option value="3">MANTENIMIENTO</option>
@@ -209,7 +209,7 @@
                 </div>
             </div>
         </div>
-        <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);">APROBACION</a>
+        <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-2" href="#collapse-2" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">APROBACION</a>
             <div class="collapse" id="collapse-2">
                 <div id="Cabezera-1">
                     <div class="container" style="border-style: solid;">
@@ -250,7 +250,7 @@
                 </div>
             </div>
         </div>
-        <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);">DESEMBOLSO</a>
+        <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-3" href="#collapse-3" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">DESEMBOLSO</a>
             <div class="collapse" id="collapse-3">
                 <div id="Cabezera-2">
                     <div class="container" style="border-style: solid;">
@@ -261,7 +261,7 @@
                             <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE APROBACION:</label><input class="form-control" id="fechaPedido-2" type="date"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE DESEMBOLSO:</label><input class="form-control" id="fechaPedido-2" type="date"></div>
                                     </div>
                                 </form>
                             </div>
@@ -280,7 +280,7 @@
                 </div>
             </div>
         </div>
-        <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);">COMPRA</a>
+        <div style="padding-bottom: 30px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-4" href="#collapse-4" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">COMPRA</a>
             <div class="collapse" id="collapse-4">
                 <div id="Cabezera-3">
                     <div class="container" style="border-style: solid;">
@@ -310,7 +310,7 @@
                 </div>
             </div>
         </div>
-        <div><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" href="#collapse-5" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);">RENDICION</a>
+        <div style="padding-bottom: 21px;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-5" href="#collapse-5" role="button" style="width: 90%;background: #095632;border-width: 3px;border-color: var(--bs-dark);font-size: 20px;font-weight: bold;">RENDICION</a>
             <div class="collapse" id="collapse-5">
                 <div id="Cabezera-4">
                     <div class="container" style="border-style: solid;">
@@ -319,17 +319,32 @@
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div></div>
-                            </div>
-                            <div class="col">
                                 <form>
                                     <div class="row">
-                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE RENDICION:</label><input class="form-control" id="fechaPedido-4" type="date"></div>
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">FECHA DE RENDICION:</label><input class="form-control" id="fechaPedido-5" type="date"></div>
                                     </div>
                                 </form>
                             </div>
                             <div class="col">
-                                <div></div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">QUIEN HACE LA RENDICION:</label><select class="form-select">
+                                                <option value="3" selected="">DECANO</option>
+                                                <option value="13">COORD. DE FACULTAD</option>
+                                            </select></div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col">
+                                <form>
+                                    <div class="row">
+                                        <div class="col"><label class="form-label" style="color: var(--bs-white);">DERIVADO A:</label><select class="form-select">
+                                                <option value="12" selected="">VICERRECTORADO</option>
+                                                <option value="13">SECRETARIA GRAL.</option>
+                                                <option value="14">CONTABILIDAD</option>
+                                            </select></div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="row" style="margin-top: 23px;">
@@ -395,6 +410,7 @@
     <script src="assets/js/cargador.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/ingreso.js"></script>
+    <script src="assets/js/prueba.js"></script>
 </body>
 
 </html>

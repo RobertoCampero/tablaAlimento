@@ -1,4 +1,4 @@
-var index=0;
+var index=1;
 function FichaMadre(a,b,c,d,e,f,g,h,i,j){
     this.a=a;
     this.b=b;
