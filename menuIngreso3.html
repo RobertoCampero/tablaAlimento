@@ -18,27 +18,27 @@
     <div id="Cabezera-5" style="padding-top: 242px;">
         <div class="container" style="border-style: solid;border-color: var(--bs-white);border-top-style: solid;padding-top: 0px;">
             <div class="row">
-                <div class="col text-center"><label class="col-form-label" style="font-size: 19px;color: var(--bs-gray-100);font-weight: bold;">FICHA DE MADRE<br></label></div>
+                <div class="col text-center"><label class="col-form-label" style="font-size: 19px;color: var(--bs-gray-100);font-weight: bold;">CREAR LOTE<br></label></div>
             </div>
             <div class="row">
                 <div class="col">
                     <form>
                         <div class="row">
-                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">RAZA:</label><input class="form-control" type="text" id="solicitantePedido"></div>
+                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">NUMERO DE LOTE:</label><input class="form-control" type="number" id="codigoPedido-10" onekeypress="return event.charCode &gt;=48"></div>
                         </div>
                     </form>
                 </div>
                 <div class="col">
                     <form>
                         <div class="row">
-                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">NUMERO DE LA MADRE:</label><input class="form-control" type="number" id="codigoPedido-10" onekeypress="return event.charCode &gt;=48"></div>
+                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">NUMERO DE LA MADRE:</label><input class="form-control" type="search"></div>
                         </div>
                     </form>
                 </div>
                 <div class="col">
                     <form>
                         <div class="row">
-                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">FECHA DE NACIMIENTO:</label><input class="form-control" type="date"></div>
+                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">FECHA DE DESTETE:</label><input class="form-control" type="date"></div>
                         </div>
                     </form>
                 </div>
@@ -47,34 +47,20 @@
                 <div class="col">
                     <form>
                         <div class="row">
-                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">MADRE:</label><input class="form-control" type="text" id="solicitantePedido-8"></div>
+                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">NUMERO DE CRIAS:</label><input class="form-control" type="text" id="solicitantePedido-8"></div>
                         </div>
                     </form>
                 </div>
                 <div class="col">
                     <form>
                         <div class="row">
-                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">PADRE:</label><input class="form-control" type="text" id="aprobadoPedido-1"></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col">
-                    <form>
-                        <div class="row">
-                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">ORIGEN:</label><input class="form-control" type="text" id="solicitantePedido-9"></div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col">
-                    <form>
-                        <div class="row">
-                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">FECHA DE INGRESO A CRIADERO:</label><input class="form-control" type="date"></div>
+                            <div class="col"><label class="form-label" style="color: var(--bs-gray-100);">PESO PROMEDIO (KG):</label><input class="form-control" type="text" id="aprobadoPedido-1"></div>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="row" style="margin-top: 23px;padding-bottom: 71px;">
-                <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedidoIngreso1" type="button" style="background: var(--bs-green);" onclick="CargarIngreso1()">GUARDAR</button></div>
+                <div class="col" style="text-align: center;"><button class="btn btn-primary" id="anadirPedidoIngreso1" type="button" style="background: var(--bs-green);" onclick="CargarIngreso1()">CREAR</button></div>
             </div>
         </div>
     </div>
@@ -85,7 +71,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="menuDashboard.html" style="background: var(--bs-green);color: var(--bs-white);">DASHBOARD</a></li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="" style="background: var(--bs-green);color: var(--bs-white);">INGRESO</a>
-                            <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuIngreso.html">NUEVA FICHA DE MADRE</a><a class="dropdown-item" href="menuIngreso1.html">NUEVA GESTACION</a><a class="dropdown-item" href="menuIngreso2.html">NUEVA FASE PRODUCTIVA</a></div>
+                            <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuIngreso.html" style="color: var(--bs-white);">NUEVA FICHA DE MADRE</a><a class="dropdown-item" href="menuIngreso1.html" style="color: var(--bs-white);">NUEVA GESTACION</a><a class="dropdown-item" href="menuIngreso2.html" style="color: var(--bs-white);">NUEVA FASE PRODUCTIVA</a><a class="dropdown-item" href="menuIngreso3.html" style="color: var(--bs-white);">NUEVO LOTE</a></div>
                         </li>
                         <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="" style="background: var(--bs-green);color: var(--bs-white);">EGRESO</a>
                             <div class="dropdown-menu" style="background: var(--bs-success);"><a class="dropdown-item" href="menuEgresoCrear.html">CREAR SOLICITUD</a><a class="dropdown-item" href="menuEgresoVer.html">VER SOLICITUDES</a></div>
